@@ -1,0 +1,55 @@
+/*opmaak van de website*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*opmaak van de header*/
+header {
+    background-color: #4e4dbe;
+    color: #fff;
+    padding: 20px;
+}
+
+/*opmaak van de navbar*/
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none; /*haalt de onderlijn van de nav knoppen weg */
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+/*opmaak van het midden van de website*/
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+section {
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+/*opmaak van de footer*/
+footer {
+    background-color: #4e4dbe;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
