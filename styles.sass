@@ -1,0 +1,110 @@
+/* Opmaak van de website
+
+body
+  color: white
+  font-family: Arial, sans-serif
+  margin: 0
+  padding: 0
+  background-color: rgb(95, 44, 44)
+
+/* Opmaak van de header
+
+header
+  display: flex
+
+  /* Use flexbox for flexible layout
+  align-items: center
+
+  /* Center items vertically
+  background-color: #244e26
+  color: #fff
+  padding: 20px
+
+.header-content
+  flex: 1
+
+  /* Let the header-content grow flexibly
+
+.barrel
+  margin-left: 20px
+
+  /* Add a left margin to the barrel
+
+/* Opmaak van de navbar
+
+nav
+  margin-left: auto
+
+  /* Move the nav to the right side by pushing it as far left as possible
+
+  ul
+    list-style-type: none
+    margin: 0
+    padding: 0
+
+    li
+      display: inline
+      margin-right: 20px
+
+      a
+        color: #fff
+        text-decoration: none
+
+      &:last-child
+        margin-right: 0
+
+/* Opmaak van de navbar-items
+
+/* Opmaak van het midden van de website
+
+main
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr
+  gap: 20px
+  padding: 20px
+
+section
+  border: 1px solid #ccc
+  padding: 20px
+
+/* Opmaak van de footer
+
+footer
+  background-color: #244e26
+  color: #fff
+  padding: 20px
+  text-align: center
+
+/* Standaard stijlen
+
+body
+  font-size: 16px
+
+/* Stijl voor focus
+
+\:focus
+  outline: 2px solid white
+
+.introductie
+  text-align: center
+
+/* Mediaquery voor iPhones (bijv. iPhone SE, 5, 6, 7, 8)
+@media only screen and (max-width: 375px)
+  /* Specifieke stijlen voor iPhones
+
+  body
+    font-size: 14px
+
+/* Mediaquery voor iPads (bijv. iPad, iPad Pro)
+@media only screen and (min-width: 768px) and (max-width: 1024px)
+  /* Specifieke stijlen voor iPads
+
+  body
+    font-size: 18px
+
+/* Mediaquery voor laptops (bijv. laptops, desktops)
+@media only screen and (min-width: 1025px)
+  /* Specifieke stijlen voor laptops
+
+  body
+    font-size: 20px

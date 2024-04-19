@@ -1,18 +1,39 @@
-/*opmaak van de website*/
 body {
+    color: white;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: rgb(95, 44, 44);
+    background-image: url('https://64.media.tumblr.com/9eb1f15adbf09464fd37fa426dd49b7b/tumblr_o561mwrj691rrftcdo1_400.gif');
+    background-size: cover; /* Zorgt ervoor dat de achtergrondafbeelding het gehele scherm bedekt */
+    background-repeat: no-repeat; /* Voorkomt herhaling van de achtergrondafbeelding */
+    background-position: center; /* Plaatst de achtergrondafbeelding in het midden van het scherm */
 }
 
-/*opmaak van de header*/
+
+/* Opmaak van de header */
 header {
-    background-color: #4e4dbe;
+    display: flex; /* Use flexbox for flexible layout */
+    align-items: center; /* Center items vertically */
+    background-color: #244e26;
     color: #fff;
     padding: 20px;
 }
 
-/*opmaak van de navbar*/
+.header-content {
+    flex: 1; /* Let the header-content grow flexibly */
+}
+
+.barrel {
+    margin-left: 20px; /* Add a left margin to the barrel */
+}
+
+/* Opmaak van de navbar */
+nav {
+    margin-left: auto; /* Move the nav to the right side by pushing it as far left as possible */
+}
+
+/* Opmaak van de navbar-items */
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -26,14 +47,14 @@ nav ul li {
 
 nav ul li a {
     color: #fff;
-    text-decoration: none; /*haalt de onderlijn van de nav knoppen weg */
+    text-decoration: none;
 }
 
 nav ul li:last-child {
     margin-right: 0;
 }
 
-/*opmaak van het midden van de website*/
+/* Opmaak van het midden van de website */
 main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -46,10 +67,96 @@ section {
     padding: 20px;
 }
 
-/*opmaak van de footer*/
+/* Opmaak van de footer */
 footer {
-    background-color: #4e4dbe;
+    background-color: #244e26;
     color: #fff;
     padding: 20px;
     text-align: center;
+}
+
+/* Standaard stijlen */
+body {
+    font-size: 16px;
+}
+
+/* Stijl voor focus */
+:focus {
+    outline: 2px solid white;
+}
+
+.introductie{
+    text-align: center;
+}
+
+a{
+    color: white;
+}
+
+/* Opmaak van het midden van de website */
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+section {
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+/* Opmaak van het formulier */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-group button:hover {
+    background-color: #45a049;
+}
+
+/* Mediaquery voor iPhones (bijv. iPhone SE, 5, 6, 7, 8) */
+@media only screen and (max-width: 375px) {
+    /* Specifieke stijlen voor iPhones */
+    body {
+        font-size: 14px;
+    }
+}
+
+/* Mediaquery voor iPads (bijv. iPad, iPad Pro) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Specifieke stijlen voor iPads */
+    body {
+        font-size: 18px;
+    }
+}
+
+/* Mediaquery voor laptops (bijv. laptops, desktops) */
+@media only screen and (min-width: 1025px) {
+    /* Specifieke stijlen voor laptops */
+    body {
+        font-size: 20px;
+    }
 }
